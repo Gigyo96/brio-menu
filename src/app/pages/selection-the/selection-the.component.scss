@@ -9,7 +9,7 @@
   max-height: 100svh;
 }
 .small {
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
 }
 
@@ -26,4 +26,9 @@
   border-right: 1px solid rgb(42, 66, 34);
   border-bottom: 0;
   border-left: 0;
+  aspect-ratio: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
