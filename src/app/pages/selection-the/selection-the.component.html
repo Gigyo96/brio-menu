@@ -1,12 +1,12 @@
 <div
   class="svh-100 w-100 p-3 d-flex flex-column"
   id="container"
-  style="color: rgb(155, 167, 189)"
+  style="color: rgb(42, 66, 34)"
 >
   <div
-    class="flex-fill rounded-0 overflow-scroll border p-3 shadow pb-5 position-relative"
+    class="flex-fill rounded-0 overflow-scroll p-3 shadow pb-5 position-relative"
     id="inner"
-    style="border-color: rgb(155, 167, 189)"
+    style="border: 1px solid rgb(42, 66, 34)"
   >
     <a routerLink="" id="goToHomeBtn" class="btn btn-primary">
       <fa-icon [icon]="faArrowLeft"></fa-icon>
@@ -14,94 +14,166 @@
 
     <h4 class="d-flex flex-row justify-content-between">
       Thés Verts
-      <fa-icon class="text-success" [icon]="faLeaf"></fa-icon>
+      <fa-icon style="color: rgb(1, 119, 1)" [icon]="faLeaf"></fa-icon>
     </h4>
     <p class="small">
       Il Tè verde, tra cui varietà famose come Matcha, Sencha e Gunpowder, viene
       raccolto, cotto in padella e arrotolato prima di essere essiccato.
-      Conosciuto come il tè antiossidante per eccellenza, offre un gusto fresco
-      e leggermente amaro, rendendolo una scelta popolare per chi cerca
+      <br />Conosciuto come il tè antiossidante per eccellenza, offre un gusto
+      fresco e leggermente amaro, rendendolo una scelta popolare per chi cerca
       un’esperienza di degustazione leggera e salutare.
     </p>
+
+    <h5 class="my-5">
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera piccola (1-2 persone) <span>3.50</span>
+      </p>
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera grande (2-4 persone) <span>6</span>
+      </p>
+      <i class="fw-bold small">Aggiunta di latte +1</i>
+    </h5>
+
+    <h4 class="cavalier fw-bold">L’Été à Saint-Pétersbourg</h4>
+    <p class="small">
+      Tè verde Sencha proveniente dalla Cina, aromatizzato al bergamotto,
+      arancia e pompelmo. <br />Il nostro gusto Russo d’eccellenza ma in verde,
+      delizioso da degustare sia caldo che freddo.
+    </p>
+    <h4 class="cavalier fw-bold">Violette Impériale</h4>
+    <p class="small">
+      Tè verde Sencha proveniente dalla Cina, aromatizzato alla violetta e
+      cosparso di petali.<br />
+      Ha un sapore dolce e floreale.
+    </p>
+    <h4 class="cavalier fw-bold">Confidences</h4>
+    <p class="small">
+      Tè verde Sencha proveniente dalla Cina, aromatizzato al cioccolato e pera,
+      cosparso di fave di cacao, per momenti dolci e indulgenti.
+    </p>
+    <h4 class="cavalier fw-bold">Le Jardin Marocain</h4>
+    <p class="small">
+      Miscela di tè verde Sencha e Gunpowder dalla Cina, aromatizzato con frutta
+      esotica, mango, papaya e menta.<br />
+      Un'esplosione di sapori rinfrescanti.
+    </p>
+    <h4 class="cavalier fw-bold">Le Jardin de Kyoto</h4>
+    <p class="small">
+      Questo tè verde è cosparso di petali di fiori di Sakura, l’emblematico
+      ciliegio giapponese.<br />
+      Il suo sapore delicato, lo rende molto dissetante.
+    </p>
+
+    <app-divider color="rgb(42, 66, 34)"></app-divider>
 
     <h4 class="d-flex flex-row justify-content-between">
       Thés Noirs
       <fa-icon class="text-dark" [icon]="faLeaf"></fa-icon>
     </h4>
     <p class="small">
-      Il Tè nero viene raccolto, appassito, arrotolato e ossidato al 100%.
+      Il Tè nero viene raccolto, appassito, arrotolato e ossidato al 100%.<br />
       Questo processo di ossidazione è responsabile della sua caratteristica
       colorazione nera. Una curiosa storia racconta che nel XVI secolo, in
-      Inghilterra, un carico di tè verde fu accidentalmente lasciato ossidare.
+      Inghilterra, un carico di tè verde fu accidentalmente lasciato
+      ossidare.<br />
       Questo incidente portò alla scoperta del tè nero, dando vita a una nuova e
       apprezzata varietà che sarebbe diventata famosa in tutto il mondo.
     </p>
+
+    <h5 class="my-5">
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera piccola (1-2 persone) <span>3.50</span>
+      </p>
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera grande (2-4 persone) <span>6</span>
+      </p>
+      <i class="fw-bold small">Aggiunta di latte +1</i>
+    </h5>
+
+    <h4 class="cavalier fw-bold">Mélange Hemingway</h4>
+    <p class="small">
+      Tè nero proveniente dalla Cina, aromatizzato alla noce di cocco e
+      zenzero.<br />
+      Sulle orme dello scrittore a Cuba. <br />Un tè fresco e raffinato.
+    </p>
+    <h4 class="cavalier fw-bold">Cookies Vanille Caramel</h4>
+    <p class="small">
+      Tè nero proveniente dalla Cina, aromatizzato ai cookies, vaniglia e
+      caramello. <br />La tenerezza dei biscotti e del caramello dentro un tè
+      assolutamente “Gourmand”.
+    </p>
+    <h4 class="cavalier fw-bold">Massala Tchaï</h4>
+    <p class="small">
+      Meravigliosa miscela di tè nero proveniente dall'India con chiodi di
+      garofano e cardamomo.<br />
+      Un tè speziato da gustare anche con latte.
+    </p>
+    <h4 class="cavalier fw-bold">Earl Grey Pétales de Rose</h4>
+    <p class="small">
+      Tè nero cinese aromatizzato al bergamotto, cosparso di petali di rosa.<br />
+      Un grande classico immancabile.
+    </p>
+    <h4 class="cavalier fw-bold">Les Jardins de Monet</h4>
+    <p class="small">
+      Tè nero cinese aromatizzato alla fragola, rabarbaro e vaniglia.<br />
+      Un vero e proprio tuffo nei dipinti onirici del pittore impressionista,
+      molto dolce e profumato.
+    </p>
+    <h4 class="cavalier fw-bold">Les Rives du Bosphore</h4>
+    <p class="small">
+      Tè nero dalla Cina aromatizzato con melograno, pistacchio e albicocca.<br />
+      Una fuga alle porte dell'Oriente nella vostra tazza di tè.<br />
+      Sofisticato ma pungente.
+    </p>
+    <app-divider color="rgb(42, 66, 34)"></app-divider>
+
     <h4 class="d-flex flex-row justify-content-between">
-      Thé “Rouge” Pu Erh
-      <fa-icon class="text-danger" [icon]="faLeaf"></fa-icon>
+      Thé “Brun” Pu Erh
+      <fa-icon style="color: rgb(175, 77, 34)" [icon]="faLeaf"></fa-icon>
     </h4>
     <p class="small">
       Il Tè Pu Erh si ottiene attraverso un processo simile a quello del Tè
-      verde, ma con alcune differenze fondamentali. Dopo la cottura in padella,
-      le foglie vengono appassite al sole e successivamente fermentate, dando
-      origine al suo caratteristico colore rosso. Originario della Cina, il
-      celebre “Tè dell’Imperatore” si distingue per il suo sapore terroso,
-      evocativo del sottobosco, accompagnato da note speziate che ne
-      arricchiscono l'esperienza gustativa. Questa complessità lo rende un tè
-      molto apprezzato dagli intenditori. Il Pu Erh è l'unico tè che viene
-      invecchiato in cantina e a cui vengono assegnate le annate. Questo tè
-      unico, originario della Cina, è noto non solo per il suo sapore
-      distintivo, ma anche per le sue proprietà benefiche, tra cui il suo potere
-      di ridurre il colesterolo.
+      verde, ma con alcune differenze fondamentali.<br />
+      Dopo la cottura in padella, le foglie vengono appassite al sole e
+      successivamente fermentate, dando origine al suo caratteristico colore
+      rosso. <br />Originario della Cina, il celebre “Tè dell’Imperatore” si
+      distingue per il suo sapore terroso, evocativo del sottobosco,
+      accompagnato da note speziate che ne arricchiscono l'esperienza
+      gustativa.<br />
+      Questa complessità lo rende un tè molto apprezzato dagli intenditori.
+      <br />Il Pu Erh è l'unico tè che viene invecchiato in cantina e a cui
+      vengono assegnate le annate. <br />Questo tè unico, originario della Cina,
+      è noto non solo per il suo sapore distintivo, ma anche per le sue
+      proprietà benefiche, tra cui il suo potere di ridurre il colesterolo.
     </p>
-    <app-divider color="rgb(155, 167, 189)"></app-divider>
-    <h4
-      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
-    >
-      Croissant farciti <span>2</span>
-    </h4>
-    <small>Farciture:</small>
 
-    <ul style="font-size: 12px; list-style: square; line-height: 18px">
-      <li>Crema pasticcera alla fava Tonka e scorza fresca di limone</li>
-      <li>Crema al pistacchio fatta in casa con pasta pura 100% pistacchio</li>
-      <li>Croissant con composta al 90% frutta fatta in casa</li>
-      <li>
-        Croissant aux amandes con inserto alle mandorle fatto in casa e mandorle
-        a scaglie
-      </li>
-    </ul>
+    <h5 class="my-5">
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera piccola (1-2 persone) <span>4</span>
+      </p>
+      <p
+        class="mb-0 cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+      >
+        Teiera grande (2-4 persone) <span>7</span>
+      </p>
+      <i class="fw-bold small">Aggiunta di latte +1</i>
+    </h5>
 
-    <app-divider color="rgb(155, 167, 189)"></app-divider>
-
-    <h4
-      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
-    >
-      Pain au chocolat <span>2</span>
-    </h4>
+    <h4 class="cavalier fw-bold">Pu Erh Ananas</h4>
     <p class="small">
-      Impasto bicolore al cacao con all’interno barrette di cioccolato fondente
-      belga Callebaut
-    </p>
-    <app-divider color="rgb(155, 167, 189)"></app-divider>
-    <h4
-      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
-    >
-      Intreccio <span>2</span>
-    </h4>
-    <p class="small">
-      Impasto bicolore al cacao con all’interno barrette di cioccolato fondente
-      belga Callebaut
-    </p>
-    <app-divider color="rgb(155, 167, 189)"></app-divider>
-    <h4
-      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
-    >
-      Pain au raisin <span>2</span>
-    </h4>
-    <p class="small">
-      Impasto bicolore al cacao con all’interno barrette di cioccolato fondente
-      belga Callebaut
+      Una delle varietà più apprezzate è quella aromatizzata all'ananas, che
+      offre un gusto dolce e rinfrescante, perfetto per chi cerca un'esperienza
+      di degustazione unica e piacevole.
     </p>
   </div>
 </div>
