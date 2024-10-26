@@ -4,9 +4,10 @@
 @import "bootstrap/scss/bootstrap";
 /* Importing custom fonts */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+
 @font-face {
   font-family: "Cavalier";
-  src: url("/src/assets/fonts/Cavalier.ttf") format("ttf");
+  src: url("assets/fonts/Cavalier.woff2") format("woff2");
 }
 
 .roboto-slab {
@@ -15,14 +16,14 @@
   font-style: normal;
 }
 
+* {
+  font-family: "Roboto Slab", sans-serif;
+}
 .cavalier {
   font-family: "Cavalier", sans-serif;
 }
 .cavalier > * {
   font-family: "Cavalier", sans-serif;
-}
-* {
-  font-family: "Roboto Slab", sans-serif;
 }
 
 .svh-100 {
