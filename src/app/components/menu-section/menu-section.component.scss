@@ -26,6 +26,11 @@
   border: none;
   right: -1px;
   box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+  aspect-ratio: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo {

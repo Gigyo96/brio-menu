@@ -22,9 +22,11 @@
     }}</span>
     <div
       class="small"
-      [innerHTML]="section.description"
       *ngIf="section.description"
-    ></div>
+      [innerHtml]="section.description"
+    >
+      {{ section.description }}
+    </div>
     <a
       [routerLink]="section.path"
       id="goToSectionBtn"

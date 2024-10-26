@@ -10,6 +10,8 @@ import { MenuSectionComponent } from './components/menu-section/menu-section.com
 import { ViennoiseriesComponent } from './pages/viennoiseries/viennoiseries.component';
 import { DividerComponent } from './components/divider/divider.component';
 import { BriocheLievitatiComponent } from './pages/brioche-lievitati/brioche-lievitati.component';
+import { SelectionTheComponent } from './pages/selection-the/selection-the.component';
+import { TartesComponent } from './pages/tartes/tartes.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { BriocheLievitatiComponent } from './pages/brioche-lievitati/brioche-lie
     MenuSectionComponent,
     ViennoiseriesComponent,
     DividerComponent,
-    BriocheLievitatiComponent
+    BriocheLievitatiComponent,
+    SelectionTheComponent,
+    TartesComponent
   ],
   imports: [
     BrowserModule,
