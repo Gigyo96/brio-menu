@@ -1,0 +1,30 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "bootstrap/scss/bootstrap";
+/* Importing custom fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@font-face {
+  font-family: "Cavalier";
+  src: url("/src/assets/fonts/Cavalier.ttf") format("ttf");
+}
+
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.cavalier {
+  font-family: "Cavalier", sans-serif;
+}
+.cavalier > * {
+  font-family: "Cavalier", sans-serif;
+}
+* {
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.svh-100 {
+  min-height: 100svh !important;
+}

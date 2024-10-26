@@ -1,0 +1,50 @@
+<div
+  class="p-3 section position-relative"
+  [style]="
+    'background-color: ' +
+    LighterColor +
+    '; color: ' +
+    (section.fontColor ? section.fontColor : DarkerColor)
+  "
+>
+  <img src="assets/logo.png" id="logo" />
+  <div
+    class="w-100 h-100 p-3 d-flex flex-column justify-content-center align-items-start gap-3 position-relative shadow"
+    [style]="
+      'border: 1px solid ' +
+      (section.fontColor ? section.fontColor : DarkerColor) +
+      '; background-color: ' +
+      section.color
+    "
+  >
+    <span class="sectionTitle cavalier" style="line-height: 100%">{{
+      section.title
+    }}</span>
+    <div
+      class="small"
+      [innerHTML]="section.description"
+      *ngIf="section.description"
+    ></div>
+    <a
+      [routerLink]="section.path"
+      id="goToSectionBtn"
+      class="btn btn-primary"
+      [style]="
+        'background-color: ' +
+        MediumColor +
+        '; color: ' +
+        (section.fontColor ? section.fontColor : DarkerColor) +
+        '; border-left: 1px solid ' +
+        (section.fontColor ? section.fontColor : DarkerColor) +
+        '; border-top: 1px solid ' +
+        (section.fontColor ? section.fontColor : DarkerColor)
+      "
+    >
+      <fa-icon [icon]="faArrowRight"></fa-icon>
+    </a>
+
+    <div class="text-center w-100">
+      <img [src]="section.img" *ngIf="section.img" id="sectionImage" />
+    </div>
+  </div>
+</div>

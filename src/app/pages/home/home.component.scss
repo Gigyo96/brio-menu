@@ -1,0 +1,23 @@
+#container {
+  height: 100svh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-points-y: repeat(100svh);
+  scroll-snap-type: y mandatory;
+}
+
+#introSection {
+  background: url("/assets/back.png") no-repeat center center;
+  background-position: center;
+  background-size: cover;
+}
+
+#introSectionInner {
+  border: 1px solid #06656d;
+  color: #06656d;
+}
+
+#toMenuIndication {
+  position: absolute;
+  bottom: 10px;
+}

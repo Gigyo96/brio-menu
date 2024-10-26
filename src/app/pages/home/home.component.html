@@ -1,0 +1,27 @@
+<div class="w-100" id="container">
+  <div class="svh-100 section p-3" id="introSection">
+    <div
+      class="w-100 h-100 p-3 d-flex flex-column justify-content-center align-items-center position-relative"
+      id="introSectionInner"
+    >
+      <img
+        src="assets/logoMain.png"
+        class="img-fluid mb-3"
+        style="max-height: 150px"
+      />
+      <h1 class="cavalier text-decoration-underline display-4 text-center">
+        SCOPRI LA LA FILOSOFIA DI BRIò
+      </h1>
+
+      <div
+        class="cavalier d-flex flex-column h1 align-items-center mt-3"
+        id="toMenuIndication"
+        (click)="scrollToMenu()"
+      >
+        MENU
+        <fa-icon [icon]="faChevronDown"></fa-icon>
+      </div>
+    </div>
+  </div>
+  <app-menu-section *ngFor="let s of sections" [section]="s"></app-menu-section>
+</div>
