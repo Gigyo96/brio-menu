@@ -1,9 +1,9 @@
 #container {
-  background-color: rgb(18, 179, 168);
+  background-color: rgb(255, 190, 104);
   max-height: 100svh;
 }
 #inner {
-  background-color: rgb(5, 166, 155);
+  background-color: rgb(252, 177, 91);
 }
 :host {
   max-height: 100svh;
@@ -15,15 +15,15 @@
 
 #goToHomeBtn {
   position: fixed;
-  bottom: 16px;
-  left: 16px;
+  bottom: 13px;
+  left: 13px;
   border-radius: 0;
   width: 100px;
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: rgb(0, 153, 142);
-  color: rgb(0, 64, 53);
-  border-top: 1px solid #02534e;
-  border-right: 1px solid #02534e;
+  background-color: rgb(239, 164, 78);
+  color: rgb(150, 75, 0);
+  border-top: 1px solid rgb(150, 75, 0);
+  border-right: 1px solid rgb(150, 75, 0);
   border-bottom: 0;
   border-left: 0;
   aspect-ratio: 2;

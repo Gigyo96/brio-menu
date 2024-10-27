@@ -5,6 +5,7 @@ import { ViennoiseriesComponent } from './pages/viennoiseries/viennoiseries.comp
 import { BriocheLievitatiComponent } from './pages/brioche-lievitati/brioche-lievitati.component';
 import { SelectionTheComponent } from './pages/selection-the/selection-the.component';
 import { TartesComponent } from './pages/tartes/tartes.component';
+import { SalatoComponent } from './pages/salato/salato.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'tartes',
     component: TartesComponent,
+  },
+  {
+    path: 'salato',
+    component: SalatoComponent,
   },
 ];
 

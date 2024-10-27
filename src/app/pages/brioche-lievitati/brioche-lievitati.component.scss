@@ -1,10 +1,10 @@
 #container {
-  background-color: rgb(255, 192, 105);
+  background-color: rgb(107, 73, 50);
   max-height: 100svh;
 }
 #inner {
-  background-color: rgb(255, 179, 92);
-  border: 1px solid rgb(153, 77, 0);
+  background-color: rgb(94, 60, 37);
+  border: 1px solid rgb(201, 175, 157);
 }
 :host {
   max-height: 100svh;
@@ -19,15 +19,20 @@ i {
 
 #goToHomeBtn {
   position: fixed;
-  bottom: 16px;
-  left: 16px;
+  bottom: 13px;
+  left: 13px;
   border-radius: 0;
   width: 100px;
+  aspect-ratio: 2;
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: rgb(242, 166, 79);
-  color: rgb(153, 77, 0);
-  border-top: 1px solid rgb(153, 77, 0);
-  border-right: 1px solid rgb(153, 77, 0);
+  background-color: rgb(81, 47, 24);
+  color: rgb(201, 175, 157);
+  border-top: 1px solid rgb(201, 175, 157);
+  border-right: 1px solid rgb(201, 175, 157);
   border-bottom: 0;
   border-left: 0;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

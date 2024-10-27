@@ -15,8 +15,9 @@
 
 #goToHomeBtn {
   position: fixed;
-  bottom: 16px;
-  left: 16px;
+  z-index: 10;
+  bottom: 13px;
+  left: 13px;
   border-radius: 0;
   width: 100px;
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.2);
@@ -24,8 +25,8 @@
   color: rgb(155, 167, 189);
   border-top: 1px solid rgb(155, 167, 189);
   border-right: 1px solid rgb(155, 167, 189);
-  border-bottom: 0;
-  border-left: 0;
+  border-bottom: none;
+  border-left: none;
   aspect-ratio: 2;
   display: flex;
   flex-direction: column;
