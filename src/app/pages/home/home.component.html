@@ -1,4 +1,8 @@
-<div class="w-100" id="container">
+<div
+  class="w-100 position-absolute"
+  id="container"
+  [ngClass]="{ hidden: ss.sectionsVisibility == false }"
+>
   <div class="svh-100 section p-3" id="introSection">
     <div
       class="w-100 h-100 p-3 d-flex flex-column justify-content-evenly align-items-center position-relative"
@@ -26,3 +30,5 @@
   </div>
   <app-menu-section *ngFor="let s of sections" [section]="s"></app-menu-section>
 </div>
+
+<router-outlet></router-outlet>

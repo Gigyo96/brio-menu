@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { SectionsService } from 'src/sections.service';
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,8 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 })
 export class HomeComponent {
   faChevronDown = faChevronDown;
+
+  constructor(public ss: SectionsService) {}
 
   scrollToMenu() {
     document.getElementById('container')?.scrollTo({
@@ -56,22 +59,17 @@ per gruppi di 8-12 persone.`,
 
     {
       title: 'PICCOLA PASTICCERIA PER TEA TIME',
-      color: '#c294ff',
+      color: '#dfbdff',
       path: '/tea-time',
       fontColor: '#653b9c',
     },
     {
-      title: 'SÉLECTION DE THÉS',
+      title: 'SÉLECTION DE THÉS E TISANE',
       description: `Tutte le varietà di tè (Verde, Nero, Bianco, Oolong e Pu Erh) provengono dalle foglie di una stessa pianta, la Camellia Sinensis, coltivata sin dall'antichità in Cina, India e Giappone. <br>
 La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi metodi di lavorazione a cui vengono sottoposti. <br>Ad esempio, possono essere appassiti, cotti in padella, arrotolati, ossidati o fermentati, ciascun passaggio contribuisce a creare sapori e caratteristiche uniche.`,
       color: '#60964e',
       path: '/the',
       fontColor: '#2a4222',
-    },
-    {
-      title: 'TISANE',
-      color: '#fce165',
-      path: '/tisane',
     },
     {
       title: 'BEVANDE',

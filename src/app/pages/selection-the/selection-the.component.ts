@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faArrowLeft, faLeaf } from '@fortawesome/free-solid-svg-icons';
+import { SectionsService } from 'src/sections.service';
 
 @Component({
   selector: 'app-selection-the',
@@ -9,4 +10,6 @@ import { faArrowLeft, faLeaf } from '@fortawesome/free-solid-svg-icons';
 export class SelectionTheComponent {
   faArrowLeft = faArrowLeft;
   faLeaf = faLeaf;
+
+  constructor(public ss: SectionsService) {}
 }

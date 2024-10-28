@@ -28,6 +28,7 @@
       {{ section.description }}
     </div>
     <a
+      (click)="ss.sectionsVisibility = false"
       [routerLink]="section.path"
       id="goToSectionBtn"
       class="btn btn-primary"

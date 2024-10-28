@@ -1,5 +1,12 @@
-import { Component, Input, ViewEncapsulation } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  ViewEncapsulation,
+} from '@angular/core';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { SectionsService } from 'src/sections.service';
 
 @Component({
   selector: 'app-menu-section',
@@ -10,6 +17,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 export class MenuSectionComponent {
   faArrowRight = faArrowRight;
 
+  constructor(public ss: SectionsService) {}
   @Input() section!: {
     title: string;
     description?: string;

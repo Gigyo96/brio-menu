@@ -8,7 +8,11 @@
     id="inner"
     style="border: 1px solid rgb(42, 66, 34)"
   >
-    <a routerLink="" id="goToHomeBtn" class="btn btn-primary">
+    <a
+      id="goToHomeBtn"
+      class="btn btn-primary"
+      (click)="ss.sectionsVisibility = true"
+    >
       <fa-icon [icon]="faArrowLeft"></fa-icon>
     </a>
 

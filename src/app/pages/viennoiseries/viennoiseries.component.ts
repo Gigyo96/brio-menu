@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { SectionsService } from 'src/sections.service';
 
 @Component({
   selector: 'app-viennoiseries',
@@ -8,4 +9,8 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 })
 export class ViennoiseriesComponent {
   faArrowLeft = faArrowLeft;
+
+  @Output() sectionsToggle = new EventEmitter();
+
+  constructor(public ss: SectionsService) {}
 }

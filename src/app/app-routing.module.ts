@@ -15,38 +15,40 @@ const routes: Routes = [
     path: '',
     component: HomeComponent,
     title: 'Home',
-  },
-  {
-    path: 'viennoiseries',
-    component: ViennoiseriesComponent,
-  },
-  {
-    path: 'brioche',
-    component: BriocheLievitatiComponent,
-  },
-  {
-    path: 'the',
-    component: SelectionTheComponent,
-  },
-  {
-    path: 'tartes',
-    component: TartesComponent,
-  },
-  {
-    path: 'salato',
-    component: SalatoComponent,
-  },
-  {
-    path: 'tea-time',
-    component: TeaTimeComponent,
-  },
-  {
-    path: 'tisane',
-    component: TisaneComponent,
-  },
-  {
-    path: 'bevande',
-    component: BevandeComponent,
+    children: [
+      {
+        path: 'viennoiseries',
+        component: ViennoiseriesComponent,
+      },
+      {
+        path: 'brioche',
+        component: BriocheLievitatiComponent,
+      },
+      {
+        path: 'the',
+        component: SelectionTheComponent,
+      },
+      {
+        path: 'tartes',
+        component: TartesComponent,
+      },
+      {
+        path: 'salato',
+        component: SalatoComponent,
+      },
+      {
+        path: 'tea-time',
+        component: TeaTimeComponent,
+      },
+      {
+        path: 'tisane',
+        component: TisaneComponent,
+      },
+      {
+        path: 'bevande',
+        component: BevandeComponent,
+      },
+    ],
   },
 ];
 

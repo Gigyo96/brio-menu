@@ -4,6 +4,13 @@
   scroll-behavior: smooth;
   scroll-snap-points-y: repeat(100svh);
   scroll-snap-type: y mandatory;
+  z-index: 1000;
+  background-color: white;
+  left: 0px;
+  transition: left 0.4s ease-in-out;
+  &.hidden {
+    left: -100%;
+  }
 }
 
 #introSection {
