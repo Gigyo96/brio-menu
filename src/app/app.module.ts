@@ -13,6 +13,7 @@ import { BriocheLievitatiComponent } from './pages/brioche-lievitati/brioche-lie
 import { SelectionTheComponent } from './pages/selection-the/selection-the.component';
 import { TartesComponent } from './pages/tartes/tartes.component';
 import { SalatoComponent } from './pages/salato/salato.component';
+import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SalatoComponent } from './pages/salato/salato.component';
     BriocheLievitatiComponent,
     SelectionTheComponent,
     TartesComponent,
-    SalatoComponent
+    SalatoComponent,
+    TeaTimeComponent
   ],
   imports: [
     BrowserModule,

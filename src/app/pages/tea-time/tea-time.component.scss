@@ -1,9 +1,9 @@
 #container {
-  background-color: rgb(255, 204, 179);
+  background-color: rgb(207, 161, 255);
   max-height: 100svh;
 }
 #inner {
-  background-color: rgb(255, 191, 166);
+  background-color: rgb(194, 148, 255);
 }
 :host {
   max-height: 100svh;
@@ -20,10 +20,10 @@
   border-radius: 0;
   width: 100px;
   box-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.2);
-  background-color: rgb(242, 178, 153);
-  color: rgb(153, 89, 64);
-  border-top: 1px solid rgb(153, 89, 64);
-  border-right: 1px solid rgb(153, 89, 64);
+  background-color: rgb(181, 135, 242);
+  color: rgb(101, 59, 156);
+  border-top: 1px solid rgb(101, 59, 156);
+  border-right: 1px solid rgb(101, 59, 156);
   border-bottom: 0;
   border-left: 0;
   aspect-ratio: 2;

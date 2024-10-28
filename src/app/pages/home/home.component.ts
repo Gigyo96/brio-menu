@@ -51,13 +51,13 @@ per gruppi di 8-12 persone.`,
     {
       title: 'SALATO',
       color: '#ffbfa6',
-      path: '/viennoiseries',
+      path: '/salato',
     },
 
     {
       title: 'PICCOLA PASTICCERIA PER TEA TIME',
       color: '#c294ff',
-      path: '/viennoiseries',
+      path: '/tea-time',
       fontColor: '#653b9c',
     },
     {
