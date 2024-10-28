@@ -5,7 +5,7 @@
 >
   <div class="svh-100 section p-3" id="introSection">
     <div
-      class="w-100 h-100 p-3 d-flex flex-column justify-content-evenly align-items-center position-relative"
+      class="w-100 h-100 px-3 py-2 d-flex flex-column justify-content-evenly align-items-center position-relative"
       id="introSectionInner"
     >
       <img
@@ -13,13 +13,48 @@
         class="img-fluid"
         style="max-height: 150px"
       />
-      <h1 class="cavalier text-decoration-underline text-center">
+      <div class="text-center">
+        <img src="assets/cake.png" class="img-fluid" style="max-height: 30px" />
+        <br />
+        <a
+          target="_blank"
+          href="https://www.virtuquotidiane.it/cronaca/laquila-subito-in-guida-gambero-rosso-la-pasticceria-brio-aperta-da-appena-tre-mesi.html"
+          class="text-danger fw-bold"
+          >Gambero Rosso - Pasticcerie 2024</a
+        >
+      </div>
+      <div class="d-flex flex-column justify-content-center">
+        <a
+          class="d-flex flex-row align-items-center"
+          style="color: #06656d !important"
+          href="https://www.facebook.com/p/Bri%C3%B3-100095004194211/?locale=it_IT"
+          target="_blank"
+          ><fa-icon
+            [icon]="faFacebook"
+            class="me-2"
+            style="font-size: 20px"
+          ></fa-icon>
+          Facebook
+        </a>
+        <a
+          class="d-flex flex-row align-items-center"
+          style="color: #06656d !important"
+          href="https://www.instagram.com/brio.patisserie/"
+          target="_blank"
+          ><fa-icon
+            [icon]="faInstagram"
+            class="me-2"
+            style="font-size: 20px"
+          ></fa-icon>
+          Instagram</a
+        >
+      </div>
+      <!-- <h1 class="cavalier text-decoration-underline text-center">
         SCOPRI LA FILOSOFIA DI BRIó
-      </h1>
-      <span> </span>
+      </h1> -->
 
       <div
-        class="cavalier d-flex flex-column h1 align-items-center mt-3"
+        class="cavalier d-flex flex-column h1 align-items-center mt-3 mb-0"
         id="toMenuIndication"
         (click)="scrollToMenu()"
       >
@@ -29,6 +64,35 @@
     </div>
   </div>
   <app-menu-section *ngFor="let s of sections" [section]="s"></app-menu-section>
+  <div class="dvh-100 section p-3" id="introSection">
+    <div
+      class="w-100 h-100 p-3 d-flex flex-column justify-content-evenly align-items-center position-relative"
+      id="introSectionInner"
+    >
+      <h1 class="cavalier text-center fw-bold text-decoration-underline">
+        LISTA ALLERGENI
+      </h1>
+      <div class="row">
+        <div class="col-12 mb-2">1. CEREALI CONTENENTI GLUTINE</div>
+        <div class="col-12 mb-2">2. UOVA E PRODOTTI DERIVATI</div>
+        <div class="col-12 mb-2">3. ARACHIDI E PRODOTTI DERIVATI</div>
+        <div class="col-12 mb-2">4. SOIA E PRODOTTI DERIVATI</div>
+        <div class="col-12 mb-2">
+          5. LATTE E PRODOTTI DERIVATI INCLUSO LATTOSIO
+        </div>
+        <div class="col-12 mb-2">6. FRUTTA A GUSCIO</div>
+        <div class="col-12 mb-2">7. CEREALI CONTENENTI GLUTINE</div>
+      </div>
+
+      <div
+        class="text-center position-absolute"
+        style="bottom: 0; right: 0; left: 0; margin-left: auto; font-size: 12px"
+      >
+        designed at
+        <a href="https://www.menufly.it/" target="_blank">menufly.it</a> (AQ)
+      </div>
+    </div>
+  </div>
 </div>
 
 <router-outlet></router-outlet>

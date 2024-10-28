@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { SectionsService } from 'src/sections.service';
 
 @Component({
@@ -9,6 +10,8 @@ import { SectionsService } from 'src/sections.service';
 })
 export class HomeComponent {
   faChevronDown = faChevronDown;
+  faInstagram = faInstagram;
+  faFacebook = faFacebook;
 
   constructor(public ss: SectionsService) {}
 
