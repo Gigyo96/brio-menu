@@ -7,6 +7,8 @@ import { SelectionTheComponent } from './pages/selection-the/selection-the.compo
 import { TartesComponent } from './pages/tartes/tartes.component';
 import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
+import { TisaneComponent } from './pages/tisane/tisane.component';
+import { BevandeComponent } from './pages/bevande/bevande.component';
 
 const routes: Routes = [
   {
@@ -37,6 +39,14 @@ const routes: Routes = [
   {
     path: 'tea-time',
     component: TeaTimeComponent,
+  },
+  {
+    path: 'tisane',
+    component: TisaneComponent,
+  },
+  {
+    path: 'bevande',
+    component: BevandeComponent,
   },
 ];
 

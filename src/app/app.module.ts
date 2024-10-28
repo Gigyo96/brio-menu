@@ -14,6 +14,8 @@ import { SelectionTheComponent } from './pages/selection-the/selection-the.compo
 import { TartesComponent } from './pages/tartes/tartes.component';
 import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
+import { BevandeComponent } from './pages/bevande/bevande.component';
+import { TisaneComponent } from './pages/tisane/tisane.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
     SelectionTheComponent,
     TartesComponent,
     SalatoComponent,
-    TeaTimeComponent
+    TeaTimeComponent,
+    BevandeComponent,
+    TisaneComponent
   ],
   imports: [
     BrowserModule,

@@ -71,12 +71,12 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
     {
       title: 'TISANE',
       color: '#fce165',
-      path: '/viennoiseries',
+      path: '/tisane',
     },
     {
       title: 'BEVANDE',
       color: '#ffffff',
-      path: '/viennoiseries',
+      path: '/bevande',
     },
   ];
 }
