@@ -2,12 +2,13 @@
   height: 100dvh;
   overflow: scroll;
   scroll-behavior: smooth;
-  scroll-snap-points-y: repeat(100svh);
+  scroll-snap-points-y: repeat(100dvh);
+  scroll-snap-stop: normal;
   scroll-snap-type: y mandatory;
   z-index: 1000;
   background-color: white;
   left: 0px;
-  transition: left 0.4s ease-in-out;
+  transition: left 0.5s ease-in-out;
   &.hidden {
     left: -100%;
   }
