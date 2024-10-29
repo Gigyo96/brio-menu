@@ -15,6 +15,10 @@ export class HomeComponent {
 
   constructor(public ss: SectionsService) {}
 
+  ngOnInit() {
+    this.ss.sectionsVisibility = true;
+  }
+
   scrollToMenu() {
     document.getElementById('container')?.scrollTo({
       top: window.innerHeight,
@@ -61,7 +65,7 @@ per gruppi di 8-12 persone.`,
     },
 
     {
-      title: 'PICCOLA PASTICCERIA PER TEA TIME',
+      title: 'PICCOLA PASTICCERIA TEA TIME',
       color: '#dfbdff',
       path: '/tea-time',
       fontColor: '#653b9c',

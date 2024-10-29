@@ -8,11 +8,7 @@
       class="w-100 h-100 px-3 py-2 d-flex flex-column justify-content-evenly align-items-center position-relative"
       id="introSectionInner"
     >
-      <img
-        src="assets/logoMain.png"
-        class="img-fluid"
-        style="max-height: 150px"
-      />
+      <img src="assets/logo.png" class="img-fluid" style="max-height: 180px" />
       <div class="text-center">
         <img src="assets/cake.png" class="img-fluid" style="max-height: 30px" />
         <br />
@@ -66,22 +62,23 @@
   <app-menu-section *ngFor="let s of sections" [section]="s"></app-menu-section>
   <div class="dvh-100 section p-3" id="introSection">
     <div
-      class="w-100 h-100 p-3 d-flex flex-column justify-content-evenly align-items-center position-relative"
+      class="w-100 h-100 p-3 d-flex flex-column justify-content-start align-items-center position-relative"
       id="introSectionInner"
     >
       <h1 class="cavalier text-center fw-bold text-decoration-underline">
         LISTA ALLERGENI
       </h1>
-      <div class="row">
-        <div class="col-12 mb-2">1. CEREALI CONTENENTI GLUTINE</div>
-        <div class="col-12 mb-2">2. UOVA E PRODOTTI DERIVATI</div>
-        <div class="col-12 mb-2">3. ARACHIDI E PRODOTTI DERIVATI</div>
-        <div class="col-12 mb-2">4. SOIA E PRODOTTI DERIVATI</div>
-        <div class="col-12 mb-2">
-          5. LATTE E PRODOTTI DERIVATI INCLUSO LATTOSIO
+      <div class="flex-fill d-flex flex-column justify-content-center">
+        <div class="row h-100 d-flex flex-column justify-content-center">
+          <div class="col-12 mb-2">1. CEREALI CONTENENTI GLUTINE</div>
+          <div class="col-12 mb-2">2. UOVA E PRODOTTI DERIVATI</div>
+          <div class="col-12 mb-2">3. ARACHIDI E PRODOTTI DERIVATI</div>
+          <div class="col-12 mb-2">4. SOIA E PRODOTTI DERIVATI</div>
+          <div class="col-12 mb-2">
+            5. LATTE E PRODOTTI DERIVATI INCLUSO LATTOSIO
+          </div>
+          <div class="col-12 mb-2">6. FRUTTA A GUSCIO</div>
         </div>
-        <div class="col-12 mb-2">6. FRUTTA A GUSCIO</div>
-        <div class="col-12 mb-2">7. CEREALI CONTENENTI GLUTINE</div>
       </div>
 
       <div

@@ -6,5 +6,5 @@ import { Injectable } from '@angular/core';
 export class SectionsService {
   constructor() {}
 
-  sectionsVisibility: boolean = true;
+  sectionsVisibility: boolean = false;
 }
