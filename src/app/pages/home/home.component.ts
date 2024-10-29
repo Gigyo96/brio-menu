@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { SectionsService } from 'src/sections.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +14,7 @@ export class HomeComponent {
   faInstagram = faInstagram;
   faFacebook = faFacebook;
 
-  constructor(public ss: SectionsService) {}
+  constructor(public ss: SectionsService, private router: Router) {}
 
   ngOnInit() {
     this.ss.sectionsVisibility = true;
@@ -65,7 +66,7 @@ per gruppi di 8-12 persone.`,
     },
 
     {
-      title: 'PICCOLA PASTICCERIA TEA TIME',
+      title: 'PICCOLA PASTICCERIA<br>TEA TIME',
       color: '#dfbdff',
       path: '/tea-time',
       fontColor: '#653b9c',
@@ -84,4 +85,9 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
       path: '/bevande',
     },
   ];
+
+  @HostListener('window:popstate', ['$event'])
+  onPopState(event: any) {
+    this.ss.sectionsVisibility = true;
+  }
 }

@@ -17,11 +17,6 @@ const routes: Routes = [
     title: 'Home',
     children: [
       {
-        path: '',
-        redirectTo: 'viennoiseries',
-        pathMatch: 'full',
-      },
-      {
         path: 'viennoiseries',
         component: ViennoiseriesComponent,
       },
