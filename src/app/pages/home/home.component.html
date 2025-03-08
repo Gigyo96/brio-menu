@@ -25,6 +25,13 @@
           class="text-danger fw-bold"
           >Gambero Rosso - Pasticcerie 2025</a
         >
+        <br />
+        <div
+          class="text-danger fw-bold h4 mt-3 text-decoration-underline"
+          (click)="scrollToPasqua()"
+        >
+          Pasqua 2025
+        </div>
       </div>
       <div class="d-flex flex-column justify-content-center">
         <a
@@ -66,7 +73,13 @@
       </div>
     </div>
   </div>
-  <app-menu-section *ngFor="let s of sections" [section]="s"></app-menu-section>
+  <div
+    app-menu-section
+    *ngFor="let s of sections"
+    [section]="s"
+    class="h-100"
+    id="{{ s.id }}"
+  ></div>
   <div class="dvh-100 section p-3" id="introSection">
     <div
       class="w-100 h-100 p-3 d-flex flex-column justify-content-start align-items-center position-relative"

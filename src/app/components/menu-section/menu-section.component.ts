@@ -9,7 +9,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { SectionsService } from 'src/sections.service';
 
 @Component({
-  selector: 'app-menu-section',
+  selector: 'div[app-menu-section]',
   templateUrl: './menu-section.component.html',
   styleUrls: ['./menu-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
@@ -26,6 +26,8 @@ export class MenuSectionComponent {
     fontColor?: string;
     img?: string;
   };
+
+  @Input() id?: string;
 
   get LighterColor(): string {
     return this.lightenColor(this.section.color, 5);

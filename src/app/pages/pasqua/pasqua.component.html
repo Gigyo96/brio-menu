@@ -1,0 +1,36 @@
+<div
+  class="svh-100 w-100 p-3 d-flex flex-column"
+  id="container"
+  style="color: rgb(133, 114, 39)"
+>
+  <div
+    class="flex-fill rounded-0 overflow-scroll border border-dark px-3 pt-3 shadow position-relative"
+    style="padding-bottom: 100px !important"
+    id="inner"
+  >
+    <a
+      id="goToHomeBtn"
+      class="btn btn-primary"
+      (click)="ss.sectionsVisibility = true"
+    >
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </a>
+
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+    >
+      Colomba 750g
+    </h4>
+    <ul>
+      <li>Tradizionale</li>
+      <li>Cioccolato</li>
+    </ul>
+    <app-divider color="rgb(133, 114, 39)"></app-divider>
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center fw-bold"
+    >
+      Uova di Pasqua artigianali
+    </h4>
+    <app-divider color="rgb(133, 114, 39)"></app-divider>
+  </div>
+</div>

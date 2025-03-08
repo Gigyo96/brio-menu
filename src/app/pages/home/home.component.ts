@@ -20,6 +20,13 @@ export class HomeComponent {
     this.ss.sectionsVisibility = true;
   }
 
+  scrollToPasqua() {
+    const element = document.getElementById('containerPasqua');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   scrollToMenu() {
     document.getElementById('container')?.scrollTo({
       top: window.innerHeight,
@@ -83,6 +90,12 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
       title: 'BEVANDE',
       color: '#ffffff',
       path: '/bevande',
+    },
+    {
+      title: 'PASQUA 2025',
+      color: '#ebd88d',
+      path: '/pasqua',
+      id: 'containerPasqua',
     },
   ];
 

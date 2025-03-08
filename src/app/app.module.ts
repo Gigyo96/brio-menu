@@ -16,6 +16,7 @@ import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 import { BevandeComponent } from './pages/bevande/bevande.component';
 import { TisaneComponent } from './pages/tisane/tisane.component';
+import { PasquaComponent } from './pages/pasqua/pasqua.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TisaneComponent } from './pages/tisane/tisane.component';
     SalatoComponent,
     TeaTimeComponent,
     BevandeComponent,
-    TisaneComponent
+    TisaneComponent,
+    PasquaComponent
   ],
   imports: [
     BrowserModule,
