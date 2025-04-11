@@ -16,7 +16,6 @@ import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 import { BevandeComponent } from './pages/bevande/bevande.component';
 import { TisaneComponent } from './pages/tisane/tisane.component';
-import { PasquaComponent } from './pages/pasqua/pasqua.component';
 
 @NgModule({
   declarations: [
@@ -32,15 +31,9 @@ import { PasquaComponent } from './pages/pasqua/pasqua.component';
     TeaTimeComponent,
     BevandeComponent,
     TisaneComponent,
-    PasquaComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    FontAwesomeModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

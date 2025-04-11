@@ -9,7 +9,6 @@ import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 import { TisaneComponent } from './pages/tisane/tisane.component';
 import { BevandeComponent } from './pages/bevande/bevande.component';
-import { PasquaComponent } from './pages/pasqua/pasqua.component';
 
 const routes: Routes = [
   {
@@ -48,10 +47,6 @@ const routes: Routes = [
       {
         path: 'bevande',
         component: BevandeComponent,
-      },
-      {
-        path: 'pasqua',
-        component: PasquaComponent,
       },
     ],
   },
