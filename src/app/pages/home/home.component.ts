@@ -91,12 +91,6 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
       color: '#ffffff',
       path: '/bevande',
     },
-    {
-      title: 'PASQUA 2025',
-      color: '#ebd88d',
-      path: '/pasqua',
-      id: 'containerPasqua',
-    },
   ];
 
   @HostListener('window:popstate', ['$event'])
