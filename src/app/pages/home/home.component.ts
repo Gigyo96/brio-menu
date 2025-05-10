@@ -20,12 +20,12 @@ export class HomeComponent {
     this.ss.sectionsVisibility = true;
   }
 
-  scrollToPasqua() {
+  /* scrollToPasqua() {
     const element = document.getElementById('containerPasqua');
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  } */
 
   scrollToMenu() {
     document.getElementById('container')?.scrollTo({
