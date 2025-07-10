@@ -1,0 +1,62 @@
+<div
+  class="svh-100 w-100 p-3 d-flex flex-column"
+  id="container"
+  style="color: white"
+>
+  <div
+    class="flex-fill rounded-0 overflow-scroll p-3 shadow pb-5 position-relative"
+    id="inner"
+    style="border: 1px solid white"
+  >
+    <a
+      id="goToHomeBtn"
+      class="btn btn-primary"
+      (click)="ss.sectionsVisibility = true"
+    >
+      <fa-icon [icon]="faArrowLeft"></fa-icon>
+    </a>
+
+    <h3 class="text-center">Baguettines</h3>
+
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
+    >
+      La Rustique <span>5.5</span>
+    </h4>
+    <p class="small">
+      Prosciutto crudo DOP, formaggio spalmabile cremoso e rucola fresca
+    </p>
+    <app-divider color="white"></app-divider>
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
+    >
+      La Dijonnaise <span>5.5</span>
+    </h4>
+    <p class="small">
+      Prosciutto cotto di qualità, senape di Dijon e cremoso formaggio Brie
+    </p>
+    <app-divider color="white"></app-divider>
+
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
+    >
+      La Provençale <span>5.5</span>
+    </h4>
+    <p class="small mb-0">
+      Mozzarella fiordilatte, pomodoro fresco e valeriana croccante
+    </p>
+    <p class="small">(VEGETARIA)</p>
+    <app-divider color="white"></app-divider>
+
+    <h4
+      class="cavalier d-flex flex-row justify-content-between align-items-center mb-0 fw-bold"
+    >
+      L'épicée<span>5.5</span>
+    </h4>
+    <p class="small mb-0">
+      Hummus di ceci speziato fatto in casa, pomodorini secchi e spinacino
+      fresco
+    </p>
+    <p class="small">(VEGANA)</p>
+  </div>
+</div>

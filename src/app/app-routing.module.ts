@@ -9,6 +9,7 @@ import { SalatoComponent } from './pages/salato/salato.component';
 import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 import { TisaneComponent } from './pages/tisane/tisane.component';
 import { BevandeComponent } from './pages/bevande/bevande.component';
+import { PranzoVeloceComponent } from './pages/pranzo-veloce/pranzo-veloce.component';
 
 const routes: Routes = [
   {
@@ -47,6 +48,10 @@ const routes: Routes = [
       {
         path: 'bevande',
         component: BevandeComponent,
+      },
+      {
+        path: 'pranzo-veloce',
+        component: PranzoVeloceComponent,
       },
     ],
   },
