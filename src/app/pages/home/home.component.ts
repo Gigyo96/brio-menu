@@ -87,16 +87,6 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
       fontColor: '#2a4222',
     },
     {
-      title: 'BAGUETTINES - PRANZO VELOCE',
-      description: `Le nostre Baguettines offrono un'esperienza culinaria autentica, ispirata alla tradizione francese del pranzo veloce ma raffinato. <br>
-      Realizzate con pasta madre "Frodo" e farine selezionate, presentano una crosta croccante e una mollica soffice e profumata. <br>
-      Ogni Baguettine è farcita con ingredienti di prima qualità: formaggi francesi stagionati, salumi artigianali, verdure fresche e salse preparate in casa. <br>
-      Perfette per una pausa pranzo gourmet o un aperitivo sofisticato, rappresentano l'equilibrio ideale tra tradizione francese e gusto contemporaneo.`,
-      color: '#d63384',
-      path: '/pranzo-veloce',
-      fontColor: '#ffffff',
-    },
-    {
       title: 'BEVANDE',
       color: '#ffffff',
       path: '/bevande',
