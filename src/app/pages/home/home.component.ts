@@ -67,12 +67,6 @@ per gruppi di 8-12 persone.`,
     },
 
     {
-      title: 'SALATO',
-      color: '#ffbfa6',
-      path: '/salato',
-    },
-
-    {
       title: 'PICCOLA PASTICCERIA<br>TEA TIME',
       color: '#dfbdff',
       path: '/tea-time',
@@ -85,6 +79,12 @@ La differenziazione tra i vari tipi di Tè è principalmente dovuta ai diversi m
       color: '#60964e',
       path: '/the',
       fontColor: '#2a4222',
+    },
+
+    {
+      title: 'SALATO',
+      color: '#ffbfa6',
+      path: '/salato',
     },
     {
       title: 'BEVANDE',
