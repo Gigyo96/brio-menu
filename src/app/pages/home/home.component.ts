@@ -10,6 +10,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+  openReviewLinks() {
+    window.open('https://g.page/r/CW52CXdddSyMEBM/review', '_blank');
+  }
   faChevronDown = faChevronDown;
   faInstagram = faInstagram;
   faFacebook = faFacebook;
