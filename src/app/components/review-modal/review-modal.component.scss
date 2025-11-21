@@ -1,0 +1,76 @@
+.modal-body {
+  padding: 2rem 2rem 3rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 700;
+  color: #202124;
+  font-size: 1.5rem;
+}
+
+.google-logo {
+  font-family: "Product Sans", Arial, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1;
+
+  .blue {
+    color: #4285f4;
+  }
+  .red {
+    color: #db4437;
+  }
+  .yellow {
+    color: #f4b400;
+  }
+  .green {
+    color: #0f9d58;
+  }
+}
+
+.stars {
+  .star {
+    color: #f4b400;
+    font-size: 2rem;
+    margin: 0 4px;
+  }
+}
+
+p {
+  font-size: 1.1rem;
+  color: #202124;
+}
+
+.bottom-bar {
+  display: flex;
+  height: 6px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  .bar {
+    flex: 1;
+    height: 100%;
+
+    &.blue {
+      background-color: #4285f4;
+    }
+    &.red {
+      background-color: #db4437;
+    }
+    &.yellow {
+      background-color: #f4b400;
+    }
+    &.green {
+      background-color: #0f9d58;
+    }
+  }
+}

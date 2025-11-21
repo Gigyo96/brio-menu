@@ -17,6 +17,7 @@ import { TeaTimeComponent } from './pages/tea-time/tea-time.component';
 import { BevandeComponent } from './pages/bevande/bevande.component';
 import { TisaneComponent } from './pages/tisane/tisane.component';
 import { PranzoVeloceComponent } from './pages/pranzo-veloce/pranzo-veloce.component';
+import { ReviewModalComponent } from './components/review-modal/review-modal.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { PranzoVeloceComponent } from './pages/pranzo-veloce/pranzo-veloce.compo
     BevandeComponent,
     TisaneComponent,
     PranzoVeloceComponent,
+    ReviewModalComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FontAwesomeModule],
   providers: [],
