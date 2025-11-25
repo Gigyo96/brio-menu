@@ -1,23 +1,56 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnDestroy } from '@angular/core';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook } from '@fortawesome/free-brands-svg-icons';
 import { SectionsService } from 'src/sections.service';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { ReviewModalComponent } from 'src/app/components/review-modal/review-modal.component';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
 })
-export class HomeComponent {
+export class HomeComponent implements OnDestroy {
+  private modalTimeout: any;
+  openReviewLinks() {
+    window.open('https://g.page/r/CW52CXdddSyMEBM/review', '_blank');
+  }
   faChevronDown = faChevronDown;
   faInstagram = faInstagram;
   faFacebook = faFacebook;
 
-  constructor(public ss: SectionsService, private router: Router) {}
+  constructor(
+    public ss: SectionsService,
+    private router: Router,
+    private modalServ: NgbModal
+  ) {}
 
   ngOnInit() {
     this.ss.sectionsVisibility = true;
+    this.modalTimeout = setTimeout(() => {
+      this.checkAndOpenReviewModal();
+    }, 15000);
+  }
+
+  ngOnDestroy() {
+    if (this.modalTimeout) {
+      clearTimeout(this.modalTimeout);
+    }
+  }
+
+  checkAndOpenReviewModal() {
+    const lastClosed = localStorage.getItem('reviewModalClosedAt');
+    const now = Date.now();
+    const twentyFourHours = 24 * 60 * 60 * 1000;
+
+    if (!lastClosed || now - parseInt(lastClosed, 10) > twentyFourHours) {
+      this.openReviewModal(null);
+    }
+  }
+
+  openReviewModal(content: any) {
+    this.modalServ.open(ReviewModalComponent, { centered: true });
   }
 
   /* scrollToPasqua() {

@@ -8,7 +8,7 @@
       class="w-100 h-100 px-3 py-2 d-flex flex-column justify-content-evenly align-items-center position-relative"
       id="introSectionInner"
     >
-      <img src="assets/logo.png" class="img-fluid" style="max-height: 180px" />
+      <img src="assets/logo.png" class="img-fluid" style="max-height: 140px" />
       <div class="text-center">
         <div
           class="d-flex flex-row gap-3 justify-content-center align-items-center"
@@ -92,6 +92,30 @@
     [section]="s"
     class="h-100"
   ></div>
+  <div class="dvh-100 section">
+    <div
+      class="w-100 h-100 p-3 d-flex flex-column justify-content-start align-items-center position-relative"
+      id="thankyouSection"
+    >
+      <div
+        class="flex-fill d-flex flex-column justify-content-center align-items-center gap-4"
+      >
+        <img
+          src="assets/logobrio.png"
+          class="img-fluid"
+          style="max-height: 140px"
+        />
+        <h3 class="text-center fw-light">Dicci com'è andata</h3>
+        <p class="text-center fw-light">
+          Se hai apprezzato la nostra pasticceria e vuoi aiutarci a crescere,
+          lascia una recensione. Il tuo feedback è prezioso per noi!
+        </p>
+        <button class="btn btn-primary mt-3 flex" (click)="openReviewLinks()">
+          Lascia una recensione
+        </button>
+      </div>
+    </div>
+  </div>
   <div class="dvh-100 section p-3" id="introSection">
     <div
       class="w-100 h-100 p-3 d-flex flex-column justify-content-start align-items-center position-relative"
