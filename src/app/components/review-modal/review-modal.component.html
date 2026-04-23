@@ -1,18 +1,23 @@
+<div class="modal-header">
+  <h5 class="modal-title">Grazie per la tua visita!</h5>
+  <button
+    type="button"
+    class="btn-close"
+    (click)="close()"
+    aria-label="Close"
+  ></button>
+</div>
 <div class="modal-body text-center">
-  <h3 class="mb-3">Il tuo feedback è importante</h3>
-
   <img
     src="assets/google-reviews-logo.png"
     class="img-fluid mb-3"
     alt="Google Review"
   />
-
-  <button class="btn btn-primary mb-4" (click)="openReviewLinks()">
-    Lascia una recensione
-  </button>
+  <h4 class="mb-3">Il tuo feedback è importante</h4>
 
   <p class="mb-4">
-    Se ti è piaciuto Brió, aiutaci a crescere lasciando una recensione
+    Se la tua esperienza con Brió sarà positiva ricordati di lasciare una
+    recensione sul nostro profilo Google. Grazie per il tuo supporto!
   </p>
 
   <div class="bottom-bar">
@@ -21,4 +26,14 @@
     <div class="bar yellow"></div>
     <div class="bar green"></div>
   </div>
+</div>
+<div class="modal-footer">
+  <button
+    type="button"
+    class="btn btn-secondary"
+    (click)="close()"
+    aria-label="Close"
+  >
+    Me lo ricorderò 😊
+  </button>
 </div>
