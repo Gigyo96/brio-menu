@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'Brió Pâtisserie - Menù';
 
   constructor() {
+    window.location.href = 'https://menu.brio-patisserie.it';
     inject();
   }
 }
